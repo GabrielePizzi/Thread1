@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package thread1;
 
 /**
@@ -19,6 +14,14 @@ public class Thread1 {
         t.start();
         T t2 = new T('b');
         t2.start();
+        
+        R r = new R('c');
+        Thread t3 = new Thread(r);
+        t3.start();
+        
+        R r2 = new R('d');
+        Thread t4 = new Thread(r2);
+        t4.start();;
     }
     
 }
